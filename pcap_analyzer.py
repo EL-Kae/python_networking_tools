@@ -103,8 +103,7 @@ def main(argv):
         if ip_pkt.dst not in findings:
             findings[ip_pkt.dst] = 0
 
-        """
-        Here packets start to get filtered out.
+        #Here packets start to get filtered out.
 
         # If the packet doesn't have a TCP layer, the reader moves on.
         if not ip_pkt.haslayer(TCP):
@@ -119,7 +118,6 @@ def main(argv):
 
         src = ip_pkt.src
         dst = ip_pkt.dst
-        """
 
     # The csv file is created from the findings dictionary.
     createCSV(fileName, findings)
