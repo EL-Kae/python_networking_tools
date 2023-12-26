@@ -22,7 +22,7 @@ from scapy.layers.inet import IP, TCP # To extract IP and TCP layers of packets
 from scapy.packet import Raw # To extract raw data from packets
 
 # This function creates a .csv file. The function takes in a string name for the
-# file. This function is not called.
+# file.
 def createCSV(fileName):
 
     #Checks if a file with the same name already exists
